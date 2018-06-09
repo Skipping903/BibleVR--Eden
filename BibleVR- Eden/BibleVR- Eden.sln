@@ -1,12 +1,24 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BibleVR- Eden", "Assembly-CSharp.csproj", "{0FBF4642-0622-83FD-D9B9-634212C42DD7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BibleVR- Eden", "Assembly-CSharp-Editor.csproj", "{9947795A-85E8-5EDB-7591-417146067DDE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0FBF4642-0622-83FD-D9B9-634212C42DD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FBF4642-0622-83FD-D9B9-634212C42DD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FBF4642-0622-83FD-D9B9-634212C42DD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FBF4642-0622-83FD-D9B9-634212C42DD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9947795A-85E8-5EDB-7591-417146067DDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9947795A-85E8-5EDB-7591-417146067DDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9947795A-85E8-5EDB-7591-417146067DDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9947795A-85E8-5EDB-7591-417146067DDE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
