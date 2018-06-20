@@ -59,20 +59,25 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Imported Assets\Arkham Interactive\Toony\Skies\Scripts\Levelloader.cs" />
-    <Compile Include="Assets\Imported Assets\Arkham Interactive\Toony\Skies\Scripts\MouseLook.cs" />
+    <Compile Include="Assets\DevNotes.cs" />
     <Compile Include="Assets\Imported Assets\Lava_Flowing_Shader\Scripts\ScrollingUVs_Layers.cs" />
     <Compile Include="Assets\Imported Assets\LowPolyWater_Pack\Scripts\LowPolyWater.cs" />
-    <Compile Include="Assets\Scripts\CreateScripts\ColorPicker.cs" />
-    <Compile Include="Assets\Scripts\CreateScripts\HeadPicker.cs" />
+    <Compile Include="Assets\Imported Assets\Skyboxes\Arkham Interactive\Toony\Skies\Scripts\Levelloader.cs" />
+    <Compile Include="Assets\Imported Assets\Skyboxes\Arkham Interactive\Toony\Skies\Scripts\MouseLook.cs" />
+    <Compile Include="Assets\Imported Assets\Skyboxes\Sky FX Pack\Scripts\LightBeamsControlScript.cs" />
+    <Compile Include="Assets\Imported Assets\Skyboxes\Sky FX Pack\Scripts\LookAtBehaviour.cs" />
+    <Compile Include="Assets\Imported Assets\Skyboxes\Sky FX Pack\Scripts\LookAtCameraBehaviour.cs" />
+    <Compile Include="Assets\Imported Assets\Skyboxes\Sky FX Pack\Scripts\RayBehavior.cs" />
+    <Compile Include="Assets\Imported Assets\Skyboxes\Sky FX Pack\Scripts\RotateBehaviour.cs" />
+    <Compile Include="Assets\Imported Assets\Skyboxes\Sky FX Pack\Scripts\ScrollBehaviour.cs" />
+    <Compile Include="Assets\Scripts\CustomizerScripts\CameraRotate.cs" />
+    <Compile Include="Assets\Scripts\CustomizerScripts\ColorPicker.cs" />
+    <Compile Include="Assets\Scripts\CustomizerScripts\HeadPicker.cs" />
+    <Compile Include="Assets\Scripts\CustomizerScripts\InitiateCustom.cs" />
+    <Compile Include="Assets\Scripts\CustomizerScripts\SaveAndCancel.cs" />
     <Compile Include="Assets\Scripts\PlayerScripts\AWSDMove.cs" />
     <Compile Include="Assets\Scripts\PlayerScripts\CameraFollow.cs" />
-    <Compile Include="Assets\Skyboxes\Sky FX Pack\Scripts\LightBeamsControlScript.cs" />
-    <Compile Include="Assets\Skyboxes\Sky FX Pack\Scripts\LookAtBehaviour.cs" />
-    <Compile Include="Assets\Skyboxes\Sky FX Pack\Scripts\LookAtCameraBehaviour.cs" />
-    <Compile Include="Assets\Skyboxes\Sky FX Pack\Scripts\RayBehavior.cs" />
-    <Compile Include="Assets\Skyboxes\Sky FX Pack\Scripts\RotateBehaviour.cs" />
-    <Compile Include="Assets\Skyboxes\Sky FX Pack\Scripts\ScrollBehaviour.cs" />
+    <Compile Include="Assets\Scripts\SaveDataScripts\SaveCharData.cs" />
     <Compile Include="Assets\test.cs" />
     <None Include="Assets\Imported Assets\LowPolyWater_Pack\LowPoly Island\Credits.txt" />
     <None Include="Assets\Imported Assets\Lava_Flowing_Shader\Shaders\Unlit_Lava_Simple.shader" />
@@ -80,7 +85,7 @@
     <None Include="Assets\Imported Assets\Lava_Flowing_Shader\Shaders\Unlit_Lava_Distort.shader" />
     <None Include="Assets\Imported Assets\LowPolyWater_Pack\Shaders\WaterShaded.shader" />
     <None Include="Assets\Imported Assets\Lava_Flowing_Shader\Shaders\Unlit_Lava_Distort_Transparent.shader" />
-    <None Include="Assets\Skyboxes\TGU Skybox Pack\Readme.txt" />
+    <None Include="Assets\Imported Assets\Skyboxes\TGU Skybox Pack\Readme.txt" />
     <None Include="Assets\Imported Assets\Lava_Flowing_Shader\ReadMe.txt" />
     <None Include="Assets\Imported Assets\BrokenVector\FreeLowPolyPack\readme.txt" />
     <Reference Include="UnityEditor.StandardEvents">
