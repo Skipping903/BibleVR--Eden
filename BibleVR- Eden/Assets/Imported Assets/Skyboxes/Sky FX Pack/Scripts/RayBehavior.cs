@@ -3,83 +3,49 @@ using System.Collections;
 
 public class RayBehavior : MonoBehaviour
 {
-    public GameObject BeginLocation;
-    public GameObject EndLocation;
-
-    public Color BeginColor = Color.white;
-    public Color EndColor = Color.white;
-
+    public GameObject BeginLocation, EndLocation;
+    public Color startColor = Color.white, endColor = Color.white;
     public Vector3 PositionRange;
-
-
-    public float WidthA = 1.0f;
-    public float WidthB = 1.0f;
-
-    public float RadiusA = 1.0f;
-    public float RadiusB = 1.0f;
-
-    //public float Offset = 1.0f;
-
+    public float WidthA = 1.0f, WidthB = 1.0f, RadiusA = 1.0f, RadiusB = 1.0f, AlphaCurve, FadeSpeed = 1.0f;
     private LineRenderer Line;
     private Animation Anim;
-
     private bool changed = true;
     private Vector3 Offset;
 
-
-    public float AlphaCurve;
-
-    public float FadeSpeed = 1.0f;
-
-
-    // Use this for initialization
     public void ResetRay()
     {
-        Offset = new Vector3(Random.Range(-PositionRange.x, PositionRange.x),
-            Random.Range(-PositionRange.y, PositionRange.y),
-            Random.Range(-PositionRange.z, PositionRange.z)
-            );
-
-
-
-
-        changed = true;
+        this.Offset = new Vector3
+       (Random.Range(-PositionRange.x, PositionRange.x),
+        Random.Range(-PositionRange.y, PositionRange.y),
+        Random.Range(-PositionRange.z, PositionRange.z));
+        this.changed = true;
     }
 
     public void UpdateLineData()
     {
-        Line.SetPosition(0, BeginLocation.transform.position + (Offset * RadiusA));
-        Line.SetPosition(1, EndLocation.transform.position + (Offset * RadiusB));
-
-        Line.SetWidth(WidthA, WidthB);
+        AnimationCurve curve = new AnimationCurve();
+        this.Line.SetPosition(0, BeginLocation.transform.position + (Offset * RadiusA));
+        this.Line.SetPosition(1, EndLocation.transform.position + (Offset * RadiusB));
+        curve.AddKey(0, WidthA);
+        curve.AddKey(1, WidthB);
+        this.Line.widthCurve = curve;
     }
-
 
     void Start()
     {
-        Line = GetComponent<LineRenderer>();
-        Anim = GetComponent<Animation>();
-
-
-        Anim["RayAlphaCurve"].speed = FadeSpeed;
+        this.Line = GetComponent<LineRenderer>();
+        this.Anim = GetComponent<Animation>();
+        this.Anim["RayAlphaCurve"].speed = FadeSpeed;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if (changed)
+        if (this.changed)
         {
-            changed = false;
-            UpdateLineData();
+            this.changed = false;
+            this.UpdateLineData();
         }
-
-
-        Line.SetColors(new Color(BeginColor.r, BeginColor.g, BeginColor.b, AlphaCurve),
-            new Color(EndColor.r, EndColor.g, EndColor.b, AlphaCurve));
-
-
-
-        //Line.renderer.material.color = new Color(1, 1, 1, AlphaCurve);
-
+        this.Line.startColor = new Color(startColor.r, startColor.g, startColor.b, AlphaCurve);
+        this.Line.endColor= new Color(endColor.r, endColor.g, endColor.b, AlphaCurve);
     }
-}
+}//class

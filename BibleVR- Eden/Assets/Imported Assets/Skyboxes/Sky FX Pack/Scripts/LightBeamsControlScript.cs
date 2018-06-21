@@ -3,96 +3,57 @@ using System.Collections;
 
 public class LightBeamsControlScript : MonoBehaviour
 {
-    public GameObject SourceObject;
-    public GameObject TargetObject;
-
-    
-
-    public GameObject RayPrefab;
-    
-	// Use this for initialization
-
+    public GameObject SourceObject, TargetObject, RayPrefab;
     public Color RayColor;
-
-
-    //public float AlphaCurve = 0;
     public Vector3 PositionRange = Vector3.zero;
-
-    public float RadiusA;
-    public float RadiusB;
-
-    public float WidthA;
-    public float WidthB;
-
-    public float FadeSpeed = 1.0f;
-
+    public float WidthA = 1.0f, WidthB = 1.0f, RadiusA = 1.0f, RadiusB = 1.0f, FadeSpeed = 1.0f;
     public int NumRays = 10;
-    int Spawned = 0;
-    float TimeToSpawnAll = 3.0f;
-    float spawnInterval = 1.0f;
-    float currentCountdown = 0f;
+    private int Spawned = 0;
+    private float TimeToSpawnAll = 3.0f, spawnInterval = 1.0f, currentCountdown = 0f;
+    private RayBehavior[] rays;
 
-
-    RayBehavior[] rays;
-
-    void setRayValues(RayBehavior ray)
+    void SetRayValues(RayBehavior ray)
     {
         ray.PositionRange = PositionRange;
-
         ray.BeginLocation = SourceObject;
         ray.EndLocation = TargetObject;
-
-        ray.BeginColor = RayColor;
-        ray.EndColor = RayColor;
-
+        ray.startColor = RayColor;
+        ray.endColor = RayColor;
         ray.WidthA = WidthA;
         ray.WidthB = WidthB;
-
         ray.RadiusA = RadiusA;
         ray.RadiusB = RadiusB;
-
         ray.FadeSpeed = FadeSpeed;
-
         ray.ResetRay();
     }
 
-    
-    
     void SpawnRay()
     {
-        if (Spawned < NumRays)
+        if (this.Spawned < this.NumRays)
         {
-            rays[Spawned] = (GameObject.Instantiate(RayPrefab) as GameObject).GetComponent<RayBehavior>();
-            setRayValues(rays[Spawned]);
+            this.rays[this.Spawned] = (GameObject.Instantiate(this.RayPrefab) as GameObject).GetComponent<RayBehavior>();
+            this.SetRayValues(this.rays[this.Spawned]);
         }
-
-        Spawned += 1;
-
-        currentCountdown = spawnInterval;
+        this.Spawned += 1;
+        this.currentCountdown = this.spawnInterval;
     }
 
 	void Start () 
     {
-        spawnInterval = TimeToSpawnAll / NumRays;
-
-        rays = new RayBehavior[NumRays];
-
-        SpawnRay();
+        this.spawnInterval = this.TimeToSpawnAll / this.NumRays;
+        this.rays = new RayBehavior[this.NumRays];
+        this.SpawnRay();
 	}
 
-	
-	// Update is called once per frame
 	void Update () 
     {
-        if (Spawned < NumRays)
+        if (this.Spawned < this.NumRays)
         {
-            if (currentCountdown <= 0)
+            if (this.currentCountdown <= 0)
             {
-                SpawnRay();
+                this.SpawnRay();
             }
-
-            currentCountdown -= Time.deltaTime;
+            this.currentCountdown -= Time.deltaTime;
         }
-        
 	}
-}
+}//class

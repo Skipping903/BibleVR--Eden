@@ -70,6 +70,14 @@
     <Compile Include="Assets\Imported Assets\Skyboxes\Sky FX Pack\Scripts\RayBehavior.cs" />
     <Compile Include="Assets\Imported Assets\Skyboxes\Sky FX Pack\Scripts\RotateBehaviour.cs" />
     <Compile Include="Assets\Imported Assets\Skyboxes\Sky FX Pack\Scripts\ScrollBehaviour.cs" />
+    <Compile Include="Assets\Imported Assets\TeamImports\HypeTrain\PackageExport\Scripts\DisableTrigger.cs" />
+    <Compile Include="Assets\Imported Assets\TeamImports\HypeTrain\PackageExport\Scripts\PlayerScripts\GhostSwap.cs" />
+    <Compile Include="Assets\Imported Assets\TeamImports\HypeTrain\PackageExport\Scripts\PlayerScripts\InitialClassSelect.cs" />
+    <Compile Include="Assets\Imported Assets\TeamImports\HypeTrain\PackageExport\Scripts\PlayerScripts\NewCharacter.cs" />
+    <Compile Include="Assets\Imported Assets\TeamImports\HypeTrain\PackageExport\Scripts\PlayerScripts\SwapClass.cs" />
+    <Compile Include="Assets\Imported Assets\TeamImports\HypeTrain\PackageExport\Scripts\SpawnManager.cs" />
+    <Compile Include="Assets\Imported Assets\TeamImports\HypeTrain\PackageExport\Scripts\UI Scripts\Awaken.cs" />
+    <Compile Include="Assets\Imported Assets\TeamImports\HypeTrain\PackageExport\Scripts\UI Scripts\UIButtonFunctions.cs" />
     <Compile Include="Assets\Scripts\CustomizerScripts\CameraRotate.cs" />
     <Compile Include="Assets\Scripts\CustomizerScripts\ColorPicker.cs" />
     <Compile Include="Assets\Scripts\CustomizerScripts\HeadPicker.cs" />
