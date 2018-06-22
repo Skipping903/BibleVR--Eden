@@ -59,7 +59,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\DevNotes.cs" />
     <Compile Include="Assets\Imported Assets\Lava_Flowing_Shader\Scripts\ScrollingUVs_Layers.cs" />
     <Compile Include="Assets\Imported Assets\LowPolyWater_Pack\Scripts\LowPolyWater.cs" />
     <Compile Include="Assets\Imported Assets\Skyboxes\Arkham Interactive\Toony\Skies\Scripts\Levelloader.cs" />
@@ -70,14 +69,6 @@
     <Compile Include="Assets\Imported Assets\Skyboxes\Sky FX Pack\Scripts\RayBehavior.cs" />
     <Compile Include="Assets\Imported Assets\Skyboxes\Sky FX Pack\Scripts\RotateBehaviour.cs" />
     <Compile Include="Assets\Imported Assets\Skyboxes\Sky FX Pack\Scripts\ScrollBehaviour.cs" />
-    <Compile Include="Assets\Imported Assets\TeamImports\HypeTrain\PackageExport\Scripts\DisableTrigger.cs" />
-    <Compile Include="Assets\Imported Assets\TeamImports\HypeTrain\PackageExport\Scripts\PlayerScripts\GhostSwap.cs" />
-    <Compile Include="Assets\Imported Assets\TeamImports\HypeTrain\PackageExport\Scripts\PlayerScripts\InitialClassSelect.cs" />
-    <Compile Include="Assets\Imported Assets\TeamImports\HypeTrain\PackageExport\Scripts\PlayerScripts\NewCharacter.cs" />
-    <Compile Include="Assets\Imported Assets\TeamImports\HypeTrain\PackageExport\Scripts\PlayerScripts\SwapClass.cs" />
-    <Compile Include="Assets\Imported Assets\TeamImports\HypeTrain\PackageExport\Scripts\SpawnManager.cs" />
-    <Compile Include="Assets\Imported Assets\TeamImports\HypeTrain\PackageExport\Scripts\UI Scripts\Awaken.cs" />
-    <Compile Include="Assets\Imported Assets\TeamImports\HypeTrain\PackageExport\Scripts\UI Scripts\UIButtonFunctions.cs" />
     <Compile Include="Assets\Scripts\CustomizerScripts\CameraRotate.cs" />
     <Compile Include="Assets\Scripts\CustomizerScripts\ColorPicker.cs" />
     <Compile Include="Assets\Scripts\CustomizerScripts\HeadPicker.cs" />
@@ -86,6 +77,17 @@
     <Compile Include="Assets\Scripts\PlayerScripts\AWSDMove.cs" />
     <Compile Include="Assets\Scripts\PlayerScripts\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\SaveDataScripts\SaveCharData.cs" />
+    <Compile Include="Assets\Scripts\UI Scripts\GameStart.cs" />
+    <Compile Include="Assets\TeamImports\BasicName\PanelChanger.cs" />
+    <Compile Include="Assets\TeamImports\BasicName\PanelSwitcher.cs" />
+    <Compile Include="Assets\TeamImports\HypeTrain\PackageExport\Scripts\DisableTrigger.cs" />
+    <Compile Include="Assets\TeamImports\HypeTrain\PackageExport\Scripts\PlayerScripts\GhostSwap.cs" />
+    <Compile Include="Assets\TeamImports\HypeTrain\PackageExport\Scripts\PlayerScripts\InitialClassSelect.cs" />
+    <Compile Include="Assets\TeamImports\HypeTrain\PackageExport\Scripts\PlayerScripts\NewCharacter.cs" />
+    <Compile Include="Assets\TeamImports\HypeTrain\PackageExport\Scripts\PlayerScripts\SwapClass.cs" />
+    <Compile Include="Assets\TeamImports\HypeTrain\PackageExport\Scripts\SpawnManager.cs" />
+    <Compile Include="Assets\TeamImports\HypeTrain\PackageExport\Scripts\UI Scripts\Awaken.cs" />
+    <Compile Include="Assets\TeamImports\HypeTrain\PackageExport\Scripts\UI Scripts\UIButtonFunctions.cs" />
     <Compile Include="Assets\test.cs" />
     <None Include="Assets\Imported Assets\LowPolyWater_Pack\LowPoly Island\Credits.txt" />
     <None Include="Assets\Imported Assets\Lava_Flowing_Shader\Shaders\Unlit_Lava_Simple.shader" />
